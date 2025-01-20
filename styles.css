@@ -1,0 +1,283 @@
+html,
+body {
+    height: 100%;
+}
+body{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    color: #fff;
+    line-height: 150%;
+}
+*::selection{
+    background-color: #5F9EA0;
+    color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fira Code", serif;
+}
+a{
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container{
+    max-width: 1500px;
+}
+header .logo-header a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+header .logo-header a img {
+    max-width: 80px;
+    margin-right: 5px;
+}
+header .logo-header a h2 {
+    font-size: 40px;
+}
+header .logo-header a p {
+    position: absolute;
+    font-size: 10px;
+    top: auto;
+    left: 22px;
+    right: 0;
+    bottom: -5px;
+    letter-spacing: 8px;
+    font-family: "Exo 2", serif; 
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-main .menu-header ul {
+    display: flex;
+}
+header .header-main .menu-header ul li:not(:last-of-type) {
+    padding-right: 40px;
+}
+header .header-main .menu-header ul a {
+    font-size: 16px;
+    position: relative;
+}
+header .header-main .menu-header ul a:hover {
+    color: #4A90E2;
+}
+header .header-main .menu-header ul a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #4A90E2;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+header .header-main .menu-header ul a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+header {
+    padding: 20px 0;
+}
+a.common-btn {
+    padding: 0px 30px;
+    background: #4A90E2;
+    line-height: 50px;
+    display: block;
+    border-radius: 0;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+a.common-btn:hover {
+    box-shadow: 0 0 15px #4A90E2, 0 0 30px #4A90E2;
+    transform: scale(1.1);
+    border-color: #4A90E2;
+}
+.header-btn a.common-btn {
+    position: relative;
+    padding-left: 60px;
+}
+.header-btn .common-btn:before {
+    content: "\f1c1";
+    position: absolute;
+    left: 21px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-family: fontawesome;
+    font-size: 22px;
+}
+section.banner .banner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.banner .banner-lt h3 {
+    font-size: 30px;
+    font-family: "Poppins", serif;
+}
+section.banner .banner-lt h3 span {
+    color: #4A90E2;
+    font-size: 80px;
+    display: block;
+    font-family: 'Exo 2';
+    letter-spacing: 6px;
+    /* text-shadow: 0 0 4px #4A90E2; */
+}
+section.banner .banner-wrap .banner-para p {
+    font-size: 19px;
+}
+.social-media a {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    display: block;
+    background: #4A90E2;
+    border-radius: 50%;
+    font-family: fontawesome;
+    font-size: 20px;
+    color: #fff;
+    line-height: 50px;
+    transition: .3s ease-in-out;
+    border: 1px solid transparent;
+    text-align: center;
+}
+.social-media a:hover{
+    background-color: #fff;
+    color: #4A90E2;
+    border-color: #4A90E2;
+    box-shadow: 0 0 15px #4A90E2, 0 0 30px #4A90E2;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+}
+.banner-social{
+    margin-top: 30px;
+}
+.social-media li:not(:last-of-type){
+    margin-right: 15px;
+}
+.social-media a:before {
+    content: "\f0e1";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.social-media a.instagram:before {
+    content: "\f16d";
+}
+.social-media a.email:before {
+    content: "\f0e0";
+    font-size: 18px;
+}
+.social-media a.phone:before {
+    content: "\f095";
+}
+section.banner .banner-wrap .my-image-banner {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.banner .banner-wrap .my-image-banner img{
+    z-index: 1;
+}
+img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+section.banner .banner-wrap .banner-right {
+    position: relative;
+    width: 40%;
+}
+section.banner .banner-wrap .banner-right:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #FFFFFF0F 0%, #FFFFFF00 100%);
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+    top: auto;
+    bottom: 9px;
+    left: 0;
+    right: 0;
+}
+section.banner {
+    position: relative;
+    padding-top: 50px;
+}
+section.glow-design:before, 
+section.banner.glow-design:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: -520px;
+    width: 289px;
+    height: 289px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #32ACCD 0%, #8150A1 100%);
+    filter: blur(175px);
+    pointer-events: none;
+    margin: 0 auto;
+}
+section.banner.glow-design:after {
+    left: 0;
+    right: auto;
+    top: -190px;
+    bottom: auto;
+}
+section.banner .banner-wrap .banner-para span {
+    background: linear-gradient(90deg, #ffd700, #ffffff, #ffe400, #47ff00, #00e4ff, #32ACCD , #ff0080);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 6s ease-in-out infinite;
+    font-family: "Fira Code", serif;
+    font-weight: 500;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* font-family: "Poppins", serif;
+font-family: "Fira Code", serif;
+font-family: "Exo 2", serif; */
+
+  
+  
