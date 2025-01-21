@@ -142,7 +142,7 @@ section.banner .banner-lt h3 span {
     display: block;
     font-family: 'Exo 2';
     letter-spacing: 6px;
-    /* text-shadow: 0 0 4px #4A90E2; */
+    text-shadow: 0 0 4px #4A90E2;
 }
 section.banner .banner-wrap .banner-para p {
     font-size: 19px;
